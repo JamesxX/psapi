@@ -16,8 +16,16 @@ A minimal node module providing utility methods read and write data from a MySQL
 var psapi = require('psapi'),
     PSConnection = psapi.Connection;
 
+var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db', function( API ){
+	API.GetUser('5465432168').AddItem('ItemName', [], false);
+});
+
+// OR
 var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db');
-Pointshop.GetUser('5465432168').AddItem('ItemName', [], false);
+Pointshop.OnConnect = function(API){
+	Pointshop.GetUser('5465432168').AddItem('ItemName', [], false);
+};
+
 ```
 
 ## Tests

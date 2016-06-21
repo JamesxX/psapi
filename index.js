@@ -8,10 +8,7 @@
  
 "use strict";
 
-this.psapi = {};
-var psapi = this.psapi;
-
-psapi.User = require('./user.js');
-psapi.Connection = require('./connection.js');
-
-module.exports = psapi;
+module.exports = {
+	User: require('./user.js'),
+	Connection: require('./connection.js')
+};

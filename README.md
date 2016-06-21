@@ -23,7 +23,7 @@ var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db', function( API ){
 // OR
 var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db');
 Pointshop.OnConnect = function(API){
-	Pointshop.GetUser('5465432168').AddItem('ItemName', [], false);
+	API.GetUser('5465432168').AddItem('ItemName', [], false);
 };
 
 ```

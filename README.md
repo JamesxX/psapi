@@ -1,5 +1,3 @@
-# psapi
-
 Pointshop API (PSAPI)
 =========
 

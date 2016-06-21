@@ -1,0 +1,28 @@
+{
+  "name": "psapi",
+  "version": "1.0.0",
+  "description": "Interface with your Garry's mod server's pointshop data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesxX/psapi.git"
+  },
+  "keywords": [
+    "garrys",
+    "mod",
+    "gmod",
+    "garrysmod",
+    "ps",
+    "pointshop",
+    "darkrp"
+  ],
+  "author": "James R Swift <james.rt.swift@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JamesxX/psapi/issues"
+  },
+  "homepage": "https://github.com/JamesxX/psapi#readme"
+}

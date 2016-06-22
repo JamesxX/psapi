@@ -41,4 +41,5 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
 
+* 1.1.0 Bug fixes, proper tests.
 * 1.0.0 Initial release

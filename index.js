@@ -9,6 +9,6 @@
 "use strict";
 
 module.exports = {
-	User: require('./user.js'),
-	Connection: require('./connection.js')
+	User: require('./lib/user.js'),
+	Connection: require('./lib/connection.js')
 };

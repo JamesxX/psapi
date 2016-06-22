@@ -21,28 +21,30 @@ class Connection{
 		});
 		
 		this.Users = {};
-		this.OnConnect = OnConnect || function(con){};
+		var THIS_OBJECT = this;
 		
-		connection.query('SELECT * FROM pointshop_data', function(err, rows, fields) {
+		this.Connection.query('SELECT * FROM pointshop_data', function(err, rows, fields) {
 			if (err) throw err;
 			
-			for (i = 0; i < rows.length; i++) { 
+			for (var i = 0; i < rows.length; i++) { 
 				var row = rows[i]
-				this.Users[row.uniqueid] = new User(row.uniqueid, row.points, row.items, this);
+				THIS_OBJECT.Users[row.uniqueid] = new User(row.uniqueid, row.points, row.items, this);
 			}
-			this.OnConnect( this );
+			OnConnect( this );
 		});
 	}
 	
 	InvalidateUser( ID, Instance ){
 		this.Users[ ID ] = Instance;
-		connection.query(
+		this.Connection.query(
 			"UPDATE pointshop_data SET points="+ Instance.GetPoints() +", items='"+ JSON.stringify(Instance.GetItems()) +"' WHERE uniqueid='"+ Instance.GetUniqueID()+"'",
 			function(err, rows, fields){
 				if (err) throw err;
 			}
 		);
 	}
+	
+	GetUser( ID ){ return this.Users[ ID ]; }
 }
 
 module.exports = Connection;

@@ -1,6 +1,6 @@
 {
   "name": "psapi",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Interface with your Garry's mod server's pointshop data",
   "main": "index.js",
   "scripts": {

@@ -19,19 +19,12 @@ var psapi = require('psapi'),
 var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db', function( API ){
 	API.GetUser('5465432168').AddItem('ItemName', [], false);
 });
-
-// OR
-var Pointshop = new PSConnection('0.0.0.0', 'root', '', 'db');
-Pointshop.OnConnect = function(API){
-	API.GetUser('5465432168').AddItem('ItemName', [], false);
-};
-
 ```
 
 ## Tests
 
 ```shell
-   npm test
+npm test
 ```
 
 ## Contributing

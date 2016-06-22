@@ -1,7 +1,7 @@
 Pointshop API (PSAPI)
 =========
 
-A minimal node module providing utility methods read and write data from a MySQL server containing pointshop data. Get the module here [![npm version](https://badge.fury.io/js/jsapi.svg)](https://badge.fury.io/js/jsapi)
+A minimal node module providing utility methods read and write data from a MySQL server containing pointshop data. Get the module here [![npm version](https://badge.fury.io/js/psapi.svg)](https://badge.fury.io/js/psapi)
 
 
 ## Installation
